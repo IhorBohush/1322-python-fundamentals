@@ -56,7 +56,8 @@ zen = ''' The Zen of Python, by Tim Peters
 54.If the implementation is hard to explain, it's a bad idea.
 55.If the implementation is easy to explain, it may be a good idea.
 56.Namespaces are one honking great idea -- let's do more of those! '''
-print(f"{zen}",
+print(
+      f"{zen}",
       # Number of occurrences of the words 'better', 'never', 'is'
       f"Number of occurrences of the word 'better': {zen.count('better')}",
       f"Number of occurrences of the word 'never': {zen.count('never')}",
@@ -65,4 +66,5 @@ print(f"{zen}",
       f"{zen.upper()}",
       # Replace all occurrences of the symbol 'i' with '&'
       f"{zen.replace('i', '&')}",
-      sep='\n')
+      sep='\n'
+)
