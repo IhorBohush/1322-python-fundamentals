@@ -19,8 +19,6 @@ class Employee:
         Employee.__counter += 1
         self.name = name
         self.salary = salary
-        self.number_of_employees()
-        self.inform_employee()
 
     def __del__(self):
         Employee.__counter -= 1
